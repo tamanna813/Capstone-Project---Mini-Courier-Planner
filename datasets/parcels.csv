@@ -1,0 +1,9 @@
+parcel_id,destination,weight,value,priority,deadline
+P01,Customer_A,4,80,5,2
+P02,Customer_B,3,60,4,1
+P03,Customer_C,5,100,5,3
+P04,Customer_D,2,40,3,2
+P05,Customer_E,6,120,2,5
+P06,Customer_B,2,55,4,4
+P07,Customer_F,3,70,3,3
+P08,Customer_A,1,25,1,6

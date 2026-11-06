@@ -1,0 +1,29 @@
+\n========== MINI-COURIER PLANNER ==========
+\n1. PARCEL PRIORITIZATION
+P01: destination=Customer_A, priority=5, deadline=2, weight=4, value=80
+P03: destination=Customer_C, priority=5, deadline=3, weight=5, value=100
+P02: destination=Customer_B, priority=4, deadline=1, weight=3, value=60
+P06: destination=Customer_B, priority=4, deadline=4, weight=2, value=55
+P04: destination=Customer_D, priority=3, deadline=2, weight=2, value=40
+P07: destination=Customer_F, priority=3, deadline=3, weight=3, value=70
+P05: destination=Customer_E, priority=2, deadline=5, weight=6, value=120
+P08: destination=Customer_A, priority=1, deadline=6, weight=1, value=25
+\n2. OPTIMAL BOX FILLING (0/1 KNAPSACK)
+Capacity: 15 kg
+Selected: P01, P03, P06, P07, P08
+Total weight: 15 kg | Total value: 330
+\n3. DIJKSTRA SHORTEST DISTANCES FROM WAREHOUSE
+Customer_A: 4 km
+Customer_B: 6 km
+Customer_C: 7 km
+Customer_F: 8 km
+\n4. NEAREST-NEIGHBOUR DELIVERY TOUR
+Warehouse -> Customer_A -> Customer_B -> Customer_C -> Customer_F -> Warehouse
+Approximate round-trip distance: 22 km
+\n5. RUNTIME BENCHMARK
+{'input_size': 10, 'sorting_ms': 0.0026770000047804388, 'knapsack_ms': 0.12778600000018514}
+{'input_size': 25, 'sorting_ms': 0.004922000002238747, 'knapsack_ms': 0.34481899999860843}
+{'input_size': 50, 'sorting_ms': 0.008602000001189936, 'knapsack_ms': 0.6380470000024729}
+{'input_size': 100, 'sorting_ms': 0.021565000004386548, 'knapsack_ms': 1.2837329999939584}
+{'input_size': 200, 'sorting_ms': 0.07006799999942359, 'knapsack_ms': 2.5693810000007034}
+\nBenchmark results saved to outputs/runtime_results.json
